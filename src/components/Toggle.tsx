@@ -11,7 +11,10 @@ export function Toggle<T extends string>({
   value,
   onChange,
   label,
+  columns,
 }: {
+  /** Defaults to one row with every option. */
+  columns?: number;
   options: ToggleOption<T>[];
   value: T;
   onChange: (v: T) => void;
@@ -22,7 +25,7 @@ export function Toggle<T extends string>({
       role="radiogroup"
       aria-label={label}
       className="grid gap-3"
-      style={{ gridTemplateColumns: `repeat(${options.length}, minmax(0, 1fr))` }}
+      style={{ gridTemplateColumns: `repeat(${columns ?? options.length}, minmax(0, 1fr))` }}
     >
       {options.map((o) => (
         <button

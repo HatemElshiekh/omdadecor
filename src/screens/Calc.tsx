@@ -202,6 +202,7 @@ function CalcScreen({ p }: { p: Product }) {
     const qty = r.boxes ? `${r.boxes} ${ar.calc.unit_boxes}` : `${r.units} ${unitLabel}`;
     const surfaceLabel = {
       wall: ar.calc.surface_wall,
+      section: ar.calc.surface_section,
       floor: ar.calc.surface_floor,
       linear: ar.calc.surface_linear,
     }[surface];
@@ -228,8 +229,10 @@ function CalcScreen({ p }: { p: Product }) {
               setSurface(s);
               setActive('a');
             }}
+            columns={2}
             options={[
               { value: 'wall', label: ar.calc.surface_wall },
+              { value: 'section', label: ar.calc.surface_section },
               { value: 'floor', label: ar.calc.surface_floor },
               { value: 'linear', label: ar.calc.surface_linear },
             ]}
@@ -239,8 +242,8 @@ function CalcScreen({ p }: { p: Product }) {
             field('a', ar.calc.linear)
           ) : (
             <div className="grid grid-cols-2 gap-5">
-              {field('a', ar.calc.length)}
-              {field('b', surface === 'wall' ? ar.calc.height : ar.calc.width)}
+              {field('a', surface === 'section' ? ar.calc.section_width : ar.calc.length)}
+              {field('b', surface === 'floor' ? ar.calc.width : ar.calc.height)}
             </div>
           )}
 

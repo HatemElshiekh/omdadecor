@@ -110,6 +110,22 @@ describe('calc edge cases', () => {
     expect(calculate({ ...base, doors: 0, doorM2: NaN })).toMatchObject({ ok: true });
   });
 
+  it('section: exact W x H, openings never deducted, waste still applies', () => {
+    // 2 x 2.4 = 4.8 m², x1.1 = 5.28 / 0.58 = 9.1 -> 10 panels
+    const r = calculate({ ...base, surface: 'section', a: 2, b: 2.4, doors: 2, windows: 1 });
+    expect(r).toMatchObject({
+      ok: true,
+      surface: 'section',
+      net_area: 4.8,
+      gross_area: 5.28,
+      units: 10,
+    });
+    expect(calculate({ ...base, surface: 'section', a: 2, b: 0 })).toEqual({
+      ok: false,
+      error: 'MISSING_INPUT',
+    });
+  });
+
   it('openings are ignored on floors', () => {
     const r = calculate({ ...base, surface: 'floor', doors: 3, windows: 3, wastePct: 0 });
     expect(r).toMatchObject({ net_area: 12 });

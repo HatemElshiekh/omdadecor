@@ -41,11 +41,13 @@ export const ar = {
     lead_cta: 'سجّل عميل مهتم بالكمية دي', // FR-4-7
     // ---- Not in Appendix 22 (pending PO approval) ----
     surface_wall: 'حيطة',
+    surface_section: 'قطاع',
     surface_floor: 'أرضية أو سقف',
     surface_linear: 'طولي',
     length: 'الطول (متر)',
     height: 'الارتفاع (متر)',
     width: 'العرض (متر)',
+    section_width: 'العرض (متر)',
     linear: 'المتر الطولي',
     doors: 'باب',
     windows: 'شباك',

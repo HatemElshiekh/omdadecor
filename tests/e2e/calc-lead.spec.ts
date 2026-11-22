@@ -71,6 +71,29 @@ test('door and window sizes show as small muted text and can be edited', async (
   );
 });
 
+test('section (part of a wall): exact width x height, no doors/windows, waste kept', async ({
+  page,
+}) => {
+  await loginAsRep(page);
+  await openProduct(page, '20-80901');
+  await page.getByRole('button', { name: 'احسب كمية' }).click();
+  const radios = page.getByRole('radio');
+  await expect(radios).toHaveText(['حيطة', 'قطاع', 'أرضية أو سقف', 'طولي']);
+  await page.getByRole('radio', { name: 'قطاع' }).click();
+  await expect(page.locator('[data-counter]')).toHaveCount(0); // no door/window counters
+  await expect(page.getByText('العرض (متر)')).toBeVisible();
+  await expect(page.getByText('الارتفاع (متر)')).toBeVisible();
+  await enterNumber(page, 'a', '2');
+  await enterNumber(page, 'b', '2.4');
+  // 4.8 m² x 1.1 = 5.28 / 0.58 = 9.1 -> 10 panels
+  await expect(page.locator('[data-required]')).toHaveText('10');
+  await expect(page.locator('[data-result]')).toContainText('المساحة الصافية: 4.8 م²');
+  await page.getByRole('button', { name: 'سجّل عميل مهتم بالكمية دي' }).click();
+  await expect(page.locator('textarea[name="note"]')).toHaveValue(
+    'قطاع 2 × 2.4 متر: 10 لوح (الهالك ٪ 10)',
+  );
+});
+
 test('low stock shows the amber shortfall warning (FR-4-6)', async ({ page }) => {
   await loginAsRep(page);
   await openProduct(page, '1453'); // "بديل خشب كود 1054 20 سم", 62 in stock

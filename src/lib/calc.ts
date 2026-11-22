@@ -2,7 +2,11 @@
 // Shared by the calc screen and (Phase 6) the assistant's calculate_quantity tool.
 // Port of data/calc.reference.js, with the plan's validation rules (13.1).
 
-export type Surface = 'wall' | 'floor' | 'linear';
+/**
+ * wall: L x H minus doors/windows. section: an exact part of a wall (e.g. behind the TV),
+ * W x H as measured, no openings. floor: L x W. linear: running metres.
+ */
+export type Surface = 'wall' | 'section' | 'floor' | 'linear';
 export type CalcMode = 'panel' | 'sheet' | 'box' | 'tile' | 'linear';
 
 /** Standard openings (PLAN.md 13.1); the rep can override per wall. */
