@@ -872,3 +872,64 @@ Cadence: each phase = 1-2 working sessions → Netlify deploy preview → PO rev
 | `common.logout` | خروج |
 
 All strings live in `src/i18n/ar.ts` as a typed constant. No inline copy in components. No em dashes in any UI string.
+
+---
+
+## 23. Addendum: Sales Planning (Phase 10, PO request 2026-11-22)
+
+> Status: **draft for PO sign-off.** Not part of the 25,000 EGP scope until the PO confirms. Builds on Phase 7 (manager area, Excel import).
+
+### 23.1 Goal
+A manager-only tool where the showroom enters its inventory, fixed costs and operating costs, and gets a **sales target** that accounts for **seasons**, **collection timing** (cash vs credit) and the **three customer segments**: engineers (مهندسين), craftsmen (صنايعية) and end customers (عميل نهائي). After 12 months of recorded sales it **recalibrates itself** from the real data, writes an **evaluation report**, and proposes the next year's target based on what was actually achieved.
+
+Decisions taken (PO, 2026-11-22): lives **inside the Omda app** (`/manager/planning`); actual sales arrive as a **monthly Edara Excel** upload; first-year seasonality comes from **manager estimates**.
+
+### 23.2 Inputs (manager enters once a year, edits any time)
+| Input | Detail |
+|---|---|
+| Inventory | Pulled from the Edara stock import (qty per product per warehouse) × **cost price** per product (see Q11). Summarised per category. |
+| Fixed costs | Monthly line items: rent, salaries, utilities, subscriptions, other. |
+| Variable operating costs | % of sales: delivery, commissions, packaging, card fees. |
+| Customer segments (x3) | For each: expected share of sales %, average discount %, bonus % (engineers), and a **collection profile**: % cash, % at 30 days, % at 60 days, % at 90 days. |
+| Gross margin | Average margin % per category (before segment discounts). |
+| Seasonality (year 1) | Manager rates each month 1-5 (ضعيف → قوي); normalised to monthly weights summing to 1. |
+| Profit goal | Desired net profit for the year (EGP). |
+
+### 23.3 Outputs (all deterministic, `src/lib/planning.ts`, 100% unit-tested like `calc.ts`)
+- **Effective margin** per segment = category-weighted margin − discount − bonus; **blended margin** = Σ share × effective margin.
+- **Annual sales target** = (annual fixed costs + profit goal) ÷ (blended margin − variable cost %). Refuse with a clear message if the denominator ≤ 0 (the plan cannot make a profit).
+- **Break-even sales** = annual fixed costs ÷ (blended margin − variable cost %).
+- **Monthly targets** = annual target × season weight; each split by segment and by category (category mix from the inventory / sales history).
+- **Cash forecast**: each month's sales spread forward by every segment's collection profile → monthly cash-in vs monthly costs → months with a **cash gap** highlighted.
+- **Inventory cover**: the cost of goods the target needs per category vs inventory at cost → months of cover, shortfall (buy) or overstock (slow stock).
+
+### 23.4 Actuals and tracking (monthly)
+- Manager uploads Edara's monthly **sales report** (Excel) like the stock import: dry run → confirm → stored per month, category and segment.
+- Segment comes from the Edara customer type (see Q12). Unmapped customers go to "end customer" and are reported in the dry run.
+- Dashboard: target vs achieved per month, segment and category; cumulative progress; cash collected vs forecast (once collection data exists, Q13).
+
+### 23.5 Annual review ("trains itself" = recalibration on real data)
+After 12 months of actuals (button enabled when 12 months exist; also re-runnable later):
+1. **Recompute from data (formulas, not AI):** actual seasonality index per month, realised margin per segment and category, actual segment mix, actual collection days per segment (Q13), achieved vs target, category sell-through vs inventory.
+2. **Next year's seasonality** = 70% actual + 30% previous weights in year 2, then the average of all recorded years.
+3. **Next year's target** = max(new break-even-based target from the updated inputs, achieved × (1 + growth)), where growth defaults to 10% and is capped by a PO-set maximum. The manager can override, and the override is logged.
+4. **Evaluation report (Arabic):** written by Claude from the computed metrics only (tool-grounded, same post-generation validator as 12.3: any number not present in the metrics voids the paragraph). Sections: what was achieved, gaps (weak season, late-paying segment, slow category), team and segment behaviour, recommendations, proposed target. If the AI assistant is not enabled, the report shows the same metrics as tables without the narrative.
+
+### 23.6 Data model (new tables, manager-only RLS)
+`planning_years(year, profit_goal, variable_cost_pct, growth_pct, growth_cap_pct, approved_at)`, `planning_fixed_costs(year, label, monthly_amount)`, `planning_segments(year, segment, share_pct, discount_pct, bonus_pct, cash_pct, d30_pct, d60_pct, d90_pct)`, `planning_seasons(year, month, rating, weight)`, `category_margins(year, category, margin_pct)`, `sales_actuals(month, category, segment, amount, cogs)`, `planning_reviews(year, metrics jsonb, report text, proposed_target, approved_target)`.
+
+### 23.7 Phasing
+| Sub-phase | Scope | DoD |
+|---|---|---|
+| 10a | Inputs screens + target, break-even, monthly split, cash forecast, inventory cover | Golden-case unit tests for every formula; manager can produce a full plan from scratch |
+| 10b | Monthly Edara sales import + target vs achieved dashboard | Import from a real Edara sales export with dry run; numbers reconcile with Edara totals |
+| 10c | Annual review: recalibration, AI evaluation report, next-year target | Review on a 12-month synthetic dataset reproduces the expected weights/target; report passes the number validator |
+
+### 23.8 Open questions
+| # | Item | Owner | Default if unanswered |
+|---|---|---|---|
+| Q10 | Are the 25% engineer bonus and the craftsman discount fixed rates or per deal? | Client | Fixed % per segment, editable |
+| Q11 | Does Edara export **cost price** per item (needed for inventory value and COGS)? | Client | Use the stock report's total value split by quantity share |
+| Q12 | Does Edara mark the **customer type** (engineer / craftsman / end customer) on invoices? | Client | Manager maps customers once; new ones default to end customer |
+| Q13 | Can Edara export **collections / receivables** by customer (for real collection days)? | Client | Collection profile stays as entered; review flags it as unverified |
+| Q14 | Is Sales Planning added to the proposal as a priced future phase? | PO | Listed under "خطط مستقبلية" without a price |
