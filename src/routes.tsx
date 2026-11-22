@@ -62,4 +62,7 @@ const routes: RouteObject[] = [
   { path: '*', loader: () => redirect('/') },
 ];
 
-export const router = createBrowserRouter(routes);
+// BASE_URL is '/' on Netlify and '/omdadecor/' on GitHub Pages (VITE_BASE at build time).
+export const router = createBrowserRouter(routes, {
+  basename: import.meta.env.BASE_URL.replace(/\/$/, '') || '/',
+});
