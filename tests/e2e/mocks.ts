@@ -51,6 +51,9 @@ const json = (route: Route, status: number, body: unknown) =>
 export interface MockState {
   pinCalls: number;
   searchLogs: Array<Record<string, unknown>>;
+  leads: Array<Record<string, unknown>>;
+  /** Next create_lead outcome. */
+  leadMode?: 'existing' | 'offline';
   /** When set, products_for_staff returns this engineer price for every row. */
   engineerPrice?: number;
   /** Force the next pin-login response (server behaviour is tested in tests/db). */
@@ -59,7 +62,7 @@ export interface MockState {
 }
 
 export async function mockBackend(page: Page): Promise<MockState> {
-  const state: MockState = { pinCalls: 0, searchLogs: [] };
+  const state: MockState = { pinCalls: 0, searchLogs: [], leads: [] };
 
   await page.route('**/functions/v1/staff-list', (r) =>
     json(
@@ -128,7 +131,38 @@ export async function mockBackend(page: Page): Promise<MockState> {
     return json(r, 200, []);
   });
 
+  await page.route('**/rest/v1/rpc/create_lead', async (r) => {
+    if (state.leadMode === 'offline') return r.abort('internetdisconnected');
+    state.leads.push(r.request().postDataJSON() as Record<string, unknown>);
+    return json(r, 200, {
+      customer_id: 'c-1',
+      interest_id: 'i-1',
+      is_existing: state.leadMode === 'existing',
+    });
+  });
+
   return state;
+}
+
+/** Type a number like a rep would: on-screen NumPad on touch, keyboard otherwise. */
+export async function enterNumber(page: Page, name: string, value: string) {
+  const input = page.locator(`input[name="${name}"]`);
+  if (await input.evaluate((el) => (el as HTMLInputElement).readOnly)) {
+    await input.click();
+    for (const ch of value) {
+      await page
+        .getByRole('button', { name: ch === '.' ? 'علامة عشرية' : ch, exact: true })
+        .click();
+    }
+  } else {
+    await input.fill(value);
+  }
+}
+
+export async function openProduct(page: Page, query: string) {
+  await page.getByPlaceholder(/اكتب اسم المنتج/).fill(query);
+  await page.locator('[data-results] a').first().click();
+  await page.locator('[data-screen="product"]').waitFor();
 }
 
 export async function loginAsRep(page: Page) {

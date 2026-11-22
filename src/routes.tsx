@@ -42,6 +42,14 @@ const routes: RouteObject[] = [
         lazy: () => import('@/screens/Product').then((m) => ({ Component: m.Product })),
       },
       {
+        path: 'p/:id/calc',
+        lazy: () => import('@/screens/Calc').then((m) => ({ Component: m.Calc })),
+      },
+      {
+        path: 'p/:id/lead',
+        lazy: () => import('@/screens/Lead').then((m) => ({ Component: m.Lead })),
+      },
+      {
         path: 'manager',
         loader: requireManager,
         lazy: () => import('@/screens/manager/Home').then((m) => ({ Component: m.ManagerHome })),
