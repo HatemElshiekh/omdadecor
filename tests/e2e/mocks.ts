@@ -1,4 +1,22 @@
 import type { Page, Route } from '@playwright/test';
+import { buildRows } from '../../supabase/seed/seed';
+
+// Catalog fixtures = exactly what the seed loads into Supabase.
+const rows = buildRows();
+export const PRODUCTS = rows.productRows.map(({ stock, ...p }) => ({
+  ...p,
+  edara_item_code: null,
+  unit_label: null,
+  size_material_colors: null,
+  use_yes: null,
+  use_no: null,
+  say_to_customer: null,
+  install_and_complements: null,
+  complement_product_ids: [],
+  is_active: true,
+  stock_total: Object.values(stock).reduce((a, b) => a + b, 0),
+}));
+export const TEMPLATES = rows.specTemplates;
 
 // Fictional staff for UI tests. Never put real staff ids or PINs in the repo.
 export const STAFF = [
@@ -32,13 +50,16 @@ const json = (route: Route, status: number, body: unknown) =>
 
 export interface MockState {
   pinCalls: number;
+  searchLogs: Array<Record<string, unknown>>;
+  /** When set, products_for_staff returns this engineer price for every row. */
+  engineerPrice?: number;
   /** Force the next pin-login response (server behaviour is tested in tests/db). */
   next?: 'locked';
   currentUser?: string;
 }
 
 export async function mockBackend(page: Page): Promise<MockState> {
-  const state: MockState = { pinCalls: 0 };
+  const state: MockState = { pinCalls: 0, searchLogs: [] };
 
   await page.route('**/functions/v1/staff-list', (r) =>
     json(
@@ -83,7 +104,38 @@ export async function mockBackend(page: Page): Promise<MockState> {
     });
   });
 
+  await page.route('**/rest/v1/products_for_staff**', (r) =>
+    json(
+      r,
+      200,
+      PRODUCTS.map((p) => ({ ...p, engineer_price: state.engineerPrice ?? null })),
+    ),
+  );
+  await page.route('**/rest/v1/spec_templates**', (r) => json(r, 200, TEMPLATES));
+  await page.route('**/rest/v1/search_logs**', async (r) => {
+    const req = r.request();
+    if (req.method() === 'POST') {
+      const row = { id: state.searchLogs.length + 1, ...(req.postDataJSON() as object) };
+      state.searchLogs.push(row);
+      return json(r, 201, { id: row.id });
+    }
+    if (req.method() === 'PATCH') {
+      const id = Number(new URL(req.url()).searchParams.get('id')?.replace('eq.', ''));
+      const row = state.searchLogs.find((l) => l.id === id);
+      if (row) Object.assign(row, req.postDataJSON() as object);
+      return r.fulfill({ status: 204 });
+    }
+    return json(r, 200, []);
+  });
+
   return state;
+}
+
+export async function loginAsRep(page: Page) {
+  await page.goto('/login');
+  await page.getByRole('button', { name: /سامح/ }).click();
+  await typePin(page, REP_PIN);
+  await page.waitForURL(/\/(\?.*)?$/);
 }
 
 export async function typePin(page: Page, pin: string) {

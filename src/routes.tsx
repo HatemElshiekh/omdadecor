@@ -33,7 +33,14 @@ const routes: RouteObject[] = [
     loader: requireStaff,
     element: <AppShell />,
     children: [
-      { index: true, lazy: () => import('@/screens/Home').then((m) => ({ Component: m.Home })) },
+      {
+        index: true,
+        lazy: () => import('@/screens/Search').then((m) => ({ Component: m.Search })),
+      },
+      {
+        path: 'p/:id',
+        lazy: () => import('@/screens/Product').then((m) => ({ Component: m.Product })),
+      },
       {
         path: 'manager',
         loader: requireManager,

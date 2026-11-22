@@ -28,7 +28,7 @@ test('rep: PIN auto-submits on the 4th digit and lands on /', async ({ page }) =
   await expect(page).toHaveURL(/\/$/);
   expect(state.pinCalls).toBe(1);
   await expect(page.locator('header')).toContainText('سامح');
-  await expect(page.locator('[data-screen="home"]')).toBeAttached();
+  await expect(page.getByRole('heading', { name: 'بتدوّر على إيه؟' })).toBeVisible();
 });
 
 test('manager lands on /manager; logout; rep is kept out of /manager', async ({ page }) => {

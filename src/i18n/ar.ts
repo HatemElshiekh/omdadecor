@@ -18,6 +18,11 @@ export const ar = {
     empty: 'مفيش منتج بالاسم ده. جرّب كلمة أقصر، أو اسأل المساعد',
   },
   product: {
+    // FR-3-1 metadata line: "السعر: 450 ج.م · الرصيد: 24"
+    price: 'السعر: {price} ج.م',
+    stock: 'الرصيد: {qty}',
+    // Not in Appendix 22 (pending PO approval): shown only to permitted staff (FR-3-2).
+    engineer_price: 'سعر المهندس: {price} ج.م',
     price_unknown: 'السعر: يتأكد من الكاشير',
     draft: 'مواصفات عامة للنوع، تحت مراجعة المعرض',
   },
