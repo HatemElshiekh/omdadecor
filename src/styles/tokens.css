@@ -1,0 +1,31 @@
+:root {
+  /* Color */
+  --bg: #f2f4f7;
+  --surface: #ffffff;
+  --surface-soft: #f7f8fa;
+  --topbar: #2b2d31;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --primary: #1e7fd8;
+  --primary-ink: #ffffff;
+  --primary-soft: #e8f2fc;
+  --success: #1a9e6a;
+  --success-soft: #e6f6ef;
+  --warning: #b7791f;
+  --warning-soft: #fdf3e1;
+  --danger: #c53030;
+  --danger-soft: #fdecec;
+  /* Type */
+  --font: 'IBM Plex Sans Arabic', 'Tajawal', system-ui, sans-serif;
+  --fs-body: 20px;
+  --fs-small: 16px;
+  --fs-title: 28px;
+  --fs-hero: 36px;
+  /* Shape */
+  --radius: 14px;
+  --radius-lg: 20px;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 4px 12px rgba(16, 24, 40, 0.06);
+  --tap: 64px;
+  --tap-min: 56px;
+}
