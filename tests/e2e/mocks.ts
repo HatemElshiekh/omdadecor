@@ -149,6 +149,9 @@ export async function enterNumber(page: Page, name: string, value: string) {
   const input = page.locator(`input[name="${name}"]`);
   if (await input.evaluate((el) => (el as HTMLInputElement).readOnly)) {
     await input.click();
+    // Clear the current value with backspace before typing.
+    const len = (await input.inputValue()).length;
+    for (let i = 0; i < len; i++) await page.getByRole('button', { name: 'امسح رقم' }).click();
     for (const ch of value) {
       await page
         .getByRole('button', { name: ch === '.' ? 'علامة عشرية' : ch, exact: true })

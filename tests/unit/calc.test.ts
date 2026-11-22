@@ -91,6 +91,30 @@ describe('calc edge cases', () => {
     expect(r).toMatchObject({ net_area: 9.12 });
   });
 
+  it('custom door / window sizes replace the standard ones', () => {
+    // 4 x 3 = 12; door 1.0 x 2.2 = 2.2; window 2.0 x 1.5 = 3.0 -> 6.8
+    const r = calculate({ ...base, wastePct: 0, doors: 1, windows: 1, doorM2: 2.2, windowM2: 3 });
+    expect(r).toMatchObject({ net_area: 6.8 });
+  });
+
+  it('a counted opening with an empty custom size is missing input', () => {
+    expect(calculate({ ...base, doors: 1, doorM2: NaN })).toEqual({
+      ok: false,
+      error: 'MISSING_INPUT',
+    });
+    expect(calculate({ ...base, windows: 2, windowM2: 0 })).toEqual({
+      ok: false,
+      error: 'MISSING_INPUT',
+    });
+    // ...but an uncounted one does not matter
+    expect(calculate({ ...base, doors: 0, doorM2: NaN })).toMatchObject({ ok: true });
+  });
+
+  it('openings are ignored on floors', () => {
+    const r = calculate({ ...base, surface: 'floor', doors: 3, windows: 3, wastePct: 0 });
+    expect(r).toMatchObject({ net_area: 12 });
+  });
+
   it('unknown unit size -> MISSING_UNIT', () => {
     expect(calculate({ ...base, unit: { calc_mode: 'panel' } })).toEqual({
       ok: false,

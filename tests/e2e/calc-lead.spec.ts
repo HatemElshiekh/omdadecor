@@ -35,6 +35,42 @@ test('golden case 1 in the UI: wall 4 x 2.8 + 1 door -> 18 panels', async ({ pag
   await expect(page.getByRole('alert')).toHaveCount(0); // 528 in stock, no warning
 });
 
+test('door and window sizes show as small muted text and can be edited', async ({ page }) => {
+  await loginAsRep(page);
+  await openProduct(page, '20-80901');
+  await page.getByRole('button', { name: 'احسب كمية' }).click();
+
+  const doorSize = page.locator('[data-counter="باب"] [data-opening-size]');
+  const windowSize = page.locator('[data-counter="شباك"] [data-opening-size]');
+  await expect(doorSize).toHaveText('90 × 210 سم');
+  await expect(windowSize).toHaveText('120 × 120 سم');
+  const style = await doorSize.evaluate((e) => getComputedStyle(e).fontSize);
+  expect(style).toBe('16px');
+
+  await enterNumber(page, 'a', '4');
+  await enterNumber(page, 'b', '2.8');
+  await page.getByRole('button', { name: 'زوّد باب' }).click();
+  await expect(page.locator('[data-required]')).toHaveText('18');
+
+  // A double door: 200 x 210 -> 11.2 - 4.2 = 7.0 m², x1.1 / 0.58 = 13.3 -> 14 panels
+  await doorSize.click();
+  await enterNumber(page, 'dw', '200');
+  await expect(doorSize).toHaveText('200 × 210 سم');
+  await expect(page.locator('[data-result]')).toContainText('المساحة الصافية: 7 م²');
+  await expect(page.locator('[data-required]')).toHaveText('14');
+
+  // Clearing a size while a door is counted asks for the measurements.
+  await enterNumber(page, 'dh', '');
+  await expect(page.locator('[data-calc-error]')).toHaveText('اكتب المقاسات');
+  await enterNumber(page, 'dh', '210');
+
+  // The custom size travels into the lead note.
+  await page.getByRole('button', { name: 'سجّل عميل مهتم بالكمية دي' }).click();
+  await expect(page.locator('textarea[name="note"]')).toHaveValue(
+    'حيطة 4 × 2.8 متر، باب 1 (200 × 210 سم): 14 لوح (الهالك ٪ 10)',
+  );
+});
+
 test('low stock shows the amber shortfall warning (FR-4-6)', async ({ page }) => {
   await loginAsRep(page);
   await openProduct(page, '1453'); // "بديل خشب كود 1054 20 سم", 62 in stock

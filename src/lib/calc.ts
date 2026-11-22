@@ -5,8 +5,11 @@
 export type Surface = 'wall' | 'floor' | 'linear';
 export type CalcMode = 'panel' | 'sheet' | 'box' | 'tile' | 'linear';
 
-export const DOOR_M2 = 0.9 * 2.1; // 1.89
-export const WINDOW_M2 = 1.2 * 1.2; // 1.44
+/** Standard openings (PLAN.md 13.1); the rep can override per wall. */
+export const DOOR_CM = { w: 90, h: 210 } as const; // 1.89 m²
+export const WINDOW_CM = { w: 120, h: 120 } as const; // 1.44 m²
+export const DOOR_M2 = (DOOR_CM.w / 100) * (DOOR_CM.h / 100);
+export const WINDOW_M2 = (WINDOW_CM.w / 100) * (WINDOW_CM.h / 100);
 const EPS = 1e-9;
 
 export interface CalcUnit {
@@ -26,6 +29,9 @@ export interface CalcInput {
   b?: number;
   doors?: number;
   windows?: number;
+  /** Area of one door / window in m². Defaults to the standard sizes. */
+  doorM2?: number;
+  windowM2?: number;
   wastePct: number;
   unit: CalcUnit;
   price?: number | null;
@@ -83,10 +89,14 @@ export function calculate(i: CalcInput): CalcResult {
     if (!pos(i.b)) return { ok: false, error: 'MISSING_INPUT' };
     const ua = unitArea(i.unit);
     if (ua == null) return { ok: false, error: 'MISSING_UNIT' };
-    const openings =
-      i.surface === 'wall'
-        ? Math.max(0, i.doors ?? 0) * DOOR_M2 + Math.max(0, i.windows ?? 0) * WINDOW_M2
-        : 0;
+    const doors = i.surface === 'wall' ? Math.max(0, i.doors ?? 0) : 0;
+    const windows = i.surface === 'wall' ? Math.max(0, i.windows ?? 0) : 0;
+    const doorM2 = i.doorM2 ?? DOOR_M2;
+    const windowM2 = i.windowM2 ?? WINDOW_M2;
+    // A counted opening needs a real size (an edited size left empty is missing input).
+    if ((doors > 0 && !pos(doorM2)) || (windows > 0 && !pos(windowM2)))
+      return { ok: false, error: 'MISSING_INPUT' };
+    const openings = doors * doorM2 + windows * windowM2;
     net_area = i.a * i.b - openings;
     if (net_area <= 0) return { ok: false, error: 'OPENINGS_EXCEED_AREA' };
     gross_area = net_area * (1 + waste);
