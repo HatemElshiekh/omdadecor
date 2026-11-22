@@ -8,6 +8,8 @@ export const ar = {
     pin: 'اكتب رقمك السري',
     bad_pin: 'الرقم غلط، جرّب تاني',
     locked: 'استنى 10 دقايق أو كلّم المدير',
+    // Not in Appendix 22 (pending PO approval): network failure / rate limit.
+    error: 'حصلت مشكلة في الاتصال، جرّب تاني',
   },
   search: {
     title: 'بتدوّر على إيه؟',

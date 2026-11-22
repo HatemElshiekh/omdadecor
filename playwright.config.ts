@@ -17,7 +17,13 @@ export default defineConfig({
         command: `npm run build && npx vite preview --port ${PORT} --strictPort`,
         port: PORT,
         reuseExistingServer: !process.env.CI,
-        env: { VITE_ENABLE_KIT: 'true' },
+        env: {
+          VITE_ENABLE_KIT: 'true',
+          // Fake backend: every Supabase call is mocked in tests/e2e/mocks.ts.
+          VITE_SUPABASE_URL: 'https://e2e.supabase.test',
+          VITE_SUPABASE_ANON_KEY: 'e2e-anon-key',
+          VITE_IDLE_TIMEOUT_MS: '60000',
+        },
         timeout: 120_000,
       },
 });

@@ -47,6 +47,12 @@ describe('applyNumPadKey', () => {
     expect(applyNumPadKey(value, key)).toBe(expected);
   });
 
+  it('pin mode keeps leading zeros', () => {
+    let v = '';
+    for (const k of ['0', '0', '0', '7'] as const) v = applyNumPadKey(v, k, 4, 'pin');
+    expect(v).toBe('0007');
+  });
+
   it('respects maxLength (PIN = 4)', () => {
     expect(applyNumPadKey('1234', '5', 4)).toBe('1234');
   });

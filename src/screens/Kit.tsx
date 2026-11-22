@@ -8,6 +8,7 @@ import {
   DraftBadge,
   Field,
   NumPad,
+  PinDots,
   TopBar,
   applyNumPadKey,
   useToast,
@@ -119,7 +120,7 @@ export function Kit() {
   ];
 
   const onPinKey = (k: Parameters<typeof applyNumPadKey>[1]) => {
-    const next = applyNumPadKey(pin, k, PIN_LENGTH);
+    const next = applyNumPadKey(pin, k, PIN_LENGTH, 'pin');
     setPin(next);
     if (next.length === PIN_LENGTH) {
       // Demo only: auto-submit on the 4th digit, always "wrong" to show the error state.
@@ -191,23 +192,7 @@ export function Kit() {
         <Section title="NumPad (PIN)">
           <div className="flex flex-col items-center gap-6">
             <p className="text-title font-semibold">{ar.login.pin}</p>
-            <div
-              key={pinShake}
-              dir="ltr"
-              aria-label={ar.a11y.pin_dots}
-              className={pinShake ? 'animate-shake flex gap-4' : 'flex gap-4'}
-            >
-              {Array.from({ length: PIN_LENGTH }, (_, i) => (
-                <span
-                  key={i}
-                  className={
-                    i < pin.length
-                      ? 'size-5 rounded-full bg-primary'
-                      : 'size-5 rounded-full border-2 border-line'
-                  }
-                />
-              ))}
-            </div>
+            <PinDots length={PIN_LENGTH} filled={pin.length} shakeKey={pinShake} />
             {pinShake > 0 && <p className="text-body text-danger">{ar.login.bad_pin}</p>}
             <NumPad mode="pin" onKey={onPinKey} />
           </div>
