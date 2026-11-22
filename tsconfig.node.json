@@ -20,6 +20,7 @@
     "tests/e2e",
     "supabase/seed",
     "src/lib/normalize.ts",
-    "src/lib/synonyms.ts"
+    "src/lib/synonyms.ts",
+    "src/lib/unitDefaults.ts"
   ]
 }

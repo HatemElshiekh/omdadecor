@@ -12,7 +12,13 @@ export interface Product {
   price: number | null;
   engineer_price: number | null;
   unit_label: string | null;
-  calc_mode: string | null;
+  calc_mode: 'panel' | 'sheet' | 'box' | 'tile' | 'linear' | null;
+  unit_width_cm: number | null;
+  unit_length_cm: number | null;
+  box_area_m2: number | null;
+  pieces_per_box: number | null;
+  piece_length_m: number | null;
+  waste_pct: number;
   facts: Record<string, string>;
   size_material_colors: string[] | null;
   use_yes: string[] | null;
@@ -26,7 +32,7 @@ export interface Product {
 }
 
 const COLUMNS =
-  'id, edara_row_no, edara_item_code, name, category_ar, spec_type, search_text, price, engineer_price, unit_label, calc_mode, facts, size_material_colors, use_yes, use_no, say_to_customer, install_and_complements, complement_product_ids, specs_status, is_active, stock_total';
+  'id, edara_row_no, edara_item_code, name, category_ar, spec_type, search_text, price, engineer_price, unit_label, calc_mode, unit_width_cm, unit_length_cm, box_area_m2, pieces_per_box, piece_length_m, waste_pct, facts, size_material_colors, use_yes, use_no, say_to_customer, install_and_complements, complement_product_ids, specs_status, is_active, stock_total';
 
 // The whole MVP catalog (100 SKUs) is cached client-side (PLAN.md 14.3).
 export const productsQuery = {
@@ -39,7 +45,19 @@ export const productsQuery = {
       .eq('is_active', true)
       .limit(5000);
     if (error) throw error;
-    return (data ?? []).map((p) => ({ ...p, stock_total: Number(p.stock_total) })) as Product[];
+    const n = (v: unknown) => (v == null ? null : Number(v));
+    return (data ?? []).map((p) => ({
+      ...p,
+      price: n(p.price),
+      engineer_price: n(p.engineer_price),
+      unit_width_cm: n(p.unit_width_cm),
+      unit_length_cm: n(p.unit_length_cm),
+      box_area_m2: n(p.box_area_m2),
+      pieces_per_box: n(p.pieces_per_box),
+      piece_length_m: n(p.piece_length_m),
+      waste_pct: Number(p.waste_pct ?? 10),
+      stock_total: Number(p.stock_total),
+    })) as Product[];
   },
 } as const;
 

@@ -13,6 +13,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalize } from '../../src/lib/normalize.ts';
 import { typeTerms } from '../../src/lib/synonyms.ts';
+import { unitDefaults } from '../../src/lib/unitDefaults.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const read = <T>(p: string): T => JSON.parse(readFileSync(join(root, p), 'utf8')) as T;
@@ -92,6 +93,7 @@ export function buildRows() {
       engineer_price: p.engineer_price,
       calc_mode: t.calc_mode,
       facts: p.facts_from_name,
+      ...unitDefaults(p.spec_type, p.name, p.facts_from_name),
       specs_status: p.specs_status,
       stock: Object.fromEntries(WAREHOUSES.map(([wh]) => [wh, p.stock_by_warehouse[wh] ?? 0])),
     };
@@ -119,15 +121,18 @@ on conflict (type) do update set label_ar = excluded.label_ar, calc_mode = exclu
 create temp table _seed_products on commit drop as
 select * from jsonb_to_recordset(${jsonLit(productRows)}) as x(
   id uuid, edara_row_no int, name text, category_ar text, spec_type text, search_text text,
-  price numeric, engineer_price numeric, calc_mode text, facts jsonb, specs_status text, stock jsonb);
+  price numeric, engineer_price numeric, calc_mode text, facts jsonb,
+  unit_width_cm numeric, unit_length_cm numeric, box_area_m2 numeric, piece_length_m numeric,
+  specs_status text, stock jsonb);
 
-insert into public.products (id, edara_row_no, name, category_ar, spec_type, search_text, price, engineer_price, calc_mode, facts, specs_status)
-select id, edara_row_no, name, category_ar, spec_type, search_text, price, engineer_price, calc_mode, facts, specs_status
+insert into public.products (id, edara_row_no, name, category_ar, spec_type, search_text, price, engineer_price, calc_mode, facts, unit_width_cm, unit_length_cm, box_area_m2, piece_length_m, specs_status)
+select id, edara_row_no, name, category_ar, spec_type, search_text, price, engineer_price, calc_mode, facts, unit_width_cm, unit_length_cm, box_area_m2, piece_length_m, specs_status
 from _seed_products
 on conflict (id) do update set edara_row_no = excluded.edara_row_no, name = excluded.name,
   category_ar = excluded.category_ar, spec_type = excluded.spec_type, search_text = excluded.search_text,
   price = excluded.price, engineer_price = excluded.engineer_price, calc_mode = excluded.calc_mode,
-  facts = excluded.facts;
+  facts = excluded.facts, unit_width_cm = excluded.unit_width_cm, unit_length_cm = excluded.unit_length_cm,
+  box_area_m2 = excluded.box_area_m2, piece_length_m = excluded.piece_length_m;
 
 insert into public.stock (product_id, warehouse_id, qty)
 select p.id, s.key, s.value::numeric from _seed_products p, jsonb_each_text(p.stock) s

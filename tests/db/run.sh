@@ -11,3 +11,4 @@ for f in supabase/migrations/*.sql; do psql "$DATABASE_URL" -q -v ON_ERROR_STOP=
 psql "$DATABASE_URL" -q -v ON_ERROR_STOP=1 -f supabase/seed/seed.sql
 psql "$DATABASE_URL" -q -v ON_ERROR_STOP=1 -f tests/db/rls.test.sql 2>&1 | grep -E "ok -|FAIL|PASSED|ERROR"
 psql "$DATABASE_URL" -q -v ON_ERROR_STOP=1 -f tests/db/pin_login.test.sql 2>&1 | grep -E "ok -|FAIL|PASSED|ERROR"
+psql "$DATABASE_URL" -q -v ON_ERROR_STOP=1 -f tests/db/lead.test.sql 2>&1 | grep -E "ok -|FAIL|PASSED|ERROR"

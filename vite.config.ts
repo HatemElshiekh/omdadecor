@@ -5,6 +5,8 @@ import { VitePWA } from 'vite-plugin-pwa';
 import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
+  // Subpath deploys (GitHub Pages: /omdadecor/). Netlify keeps the default '/'.
+  base: process.env.VITE_BASE || '/',
   resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
   plugins: [
     react(),
@@ -16,7 +18,8 @@ export default defineConfig({
         short_name: 'العمدة',
         lang: 'ar',
         dir: 'rtl',
-        start_url: '/',
+        start_url: '.',
+        scope: '.',
         display: 'standalone',
         orientation: 'any',
         background_color: '#F2F4F7',
@@ -40,5 +43,11 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./tests/unit/setup.ts'],
     include: ['tests/unit/**/*.test.{ts,tsx}'],
+    coverage: {
+      provider: 'v8',
+      include: ['src/lib/calc.ts'],
+      // PLAN.md 13.2: 100% lines/branches for calc.ts.
+      thresholds: { lines: 100, branches: 100, functions: 100, statements: 100 },
+    },
   },
 });

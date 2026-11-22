@@ -42,6 +42,14 @@ const routes: RouteObject[] = [
         lazy: () => import('@/screens/Product').then((m) => ({ Component: m.Product })),
       },
       {
+        path: 'p/:id/calc',
+        lazy: () => import('@/screens/Calc').then((m) => ({ Component: m.Calc })),
+      },
+      {
+        path: 'p/:id/lead',
+        lazy: () => import('@/screens/Lead').then((m) => ({ Component: m.Lead })),
+      },
+      {
         path: 'manager',
         loader: requireManager,
         lazy: () => import('@/screens/manager/Home').then((m) => ({ Component: m.ManagerHome })),
@@ -54,4 +62,7 @@ const routes: RouteObject[] = [
   { path: '*', loader: () => redirect('/') },
 ];
 
-export const router = createBrowserRouter(routes);
+// BASE_URL is '/' on Netlify and '/omdadecor/' on GitHub Pages (VITE_BASE at build time).
+export const router = createBrowserRouter(routes, {
+  basename: import.meta.env.BASE_URL.replace(/\/$/, '') || '/',
+});
