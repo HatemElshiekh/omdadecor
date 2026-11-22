@@ -7,3 +7,9 @@ major_version = 17
 [db.seed]
 enabled = true
 sql_paths = ["./seed/seed.sql"]
+
+[functions.staff-list]
+verify_jwt = false
+
+[functions.pin-login]
+verify_jwt = false

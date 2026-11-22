@@ -17,6 +17,16 @@ Internal Arabic-first (RTL) PWA for the Al Omda showroom sales team. See `PLAN.m
   disposable Postgres (`DATABASE_URL`), using `tests/db/supabase_shim.sql` in place of the platform.
 - Demo project: Supabase `Omdadecordatabase` (ap-northeast-1). Staff/auth users are seeded in Phase 3.
 
+## Auth (Phase 3)
+
+- Edge Functions: `supabase/functions/staff-list`, `supabase/functions/pin-login` (both `verify_jwt = false`).
+- PIN check, lockout (5 tries / 10 min) and per-IP limit (20/min) run atomically in
+  `public.pin_login_check()` (service_role only). The PIN pepper is generated inside Supabase Vault.
+- New staff: `select private.create_staff('<name>', 'sales' | 'manager', '<4-digit PIN>');` as the
+  database owner (SQL editor). Never commit real PINs.
+- Local dev: copy `.env.example` to `.env.local` and fill the public URL + anon key.
+- Idle logout: 30 min in production, 1 min in `npm run dev` (`VITE_IDLE_TIMEOUT_MS` overrides).
+
 ## Commands
 
 ```bash

@@ -10,3 +10,4 @@ export { useToast } from './toast-context';
 export { DraftBadge } from './DraftBadge';
 export { DetailTabs, type DetailTab } from './DetailTabs';
 export { BidiText } from './BidiText';
+export { PinDots } from './PinDots';

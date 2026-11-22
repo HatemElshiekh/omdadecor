@@ -139,6 +139,15 @@ exception when insufficient_privilege then raise notice 'ok - manager still deni
 reset role;
 select pg_temp.ok((select price from public.products where edara_row_no = 6) = 500, 'manager updated price');
 
+-- service_role (Edge Functions) can read and write -----------------------------
+set local role service_role;
+select pg_temp.ok((select count(*) from public.staff) >= 4, 'service_role reads staff');
+select pg_temp.ok((select count(*) from public.products) = 100, 'service_role reads products');
+update public.stock set qty = qty where warehouse_id = 'nemis_main';
+insert into public.imports (file_name) values ('svc');
+select pg_temp.ok(true, 'service_role writes stock and imports');
+reset role;
+
 -- RLS enabled on every public table ------------------------------------------
 select pg_temp.ok(not exists (
   select 1 from pg_class c join pg_namespace n on n.oid = c.relnamespace

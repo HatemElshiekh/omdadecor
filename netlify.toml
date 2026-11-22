@@ -4,6 +4,12 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  # Public by design: both ship in the browser bundle; RLS protects the data.
+  # Secrets (service role, Anthropic key) live only in Supabase.
+  VITE_SUPABASE_URL = "https://cvxwowtqmgpwlswawfgh.supabase.co"
+  VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2eHdvd3RxbWdwd2xzd2F3ZmdoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUzMzAxOTksImV4cCI6MjExMDkwNjE5OX0.JCP_oajZabyydi2ApbMHAWkVlwCIHquch-uQTsbNbJE"
+  # These two are public values, so the secrets scanner must not fail the build on them.
+  SECRETS_SCAN_OMIT_KEYS = "VITE_SUPABASE_URL,VITE_SUPABASE_ANON_KEY"
 
 # /_kit (component gallery) is exposed on deploy previews for PO review only.
 # TEMPORARY (P1-P7): no real screens exist yet, so production also shows /_kit.
