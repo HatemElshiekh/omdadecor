@@ -6,6 +6,11 @@
   NODE_VERSION = "22"
 
 # /_kit (component gallery) is exposed on deploy previews for PO review only.
+# TEMPORARY (P1-P7): no real screens exist yet, so production also shows /_kit.
+# Remove this block before the Phase 8 launch.
+[context.production.environment]
+  VITE_ENABLE_KIT = "true"
+
 [context.deploy-preview.environment]
   VITE_ENABLE_KIT = "true"
 [context.branch-deploy.environment]
