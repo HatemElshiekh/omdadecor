@@ -1,0 +1,1941 @@
+[
+ {
+  "edara_row_no": 231,
+  "name": "زاويه PVC بديل خشب",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 790,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 734,
+   "asyut_new": 0,
+   "moalemin": 56,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 6,
+  "name": "بديل خشب 20 سم كود 20-80901",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 528,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 34,
+   "asyut_new": 494,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "20 سم",
+   "كود الموديل": "20-80901"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 4,
+  "name": "بديل خشب 20 سم كود 8-806001",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 439,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 182,
+   "asyut_new": 257,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "20 سم",
+   "كود الموديل": "8-806001"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 51,
+  "name": "بديل خشب 17 سم كود M1-007",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 209,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 193,
+   "asyut_new": 16,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "17 سم",
+   "كود الموديل": "M1-007"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 40,
+  "name": "بديل خشب 12.5 سم كود 666 ps بني غامق",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 203,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 203,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "12.5 سم",
+   "اللون": "بني",
+   "كود الموديل": "666"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1621,
+  "name": "بديل خشب كود 1102 17 سم",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 198,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 198,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "17 سم",
+   "كود الموديل": "1102"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1554,
+  "name": "بديل خشب 17 سم كود 1059",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 150,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 150,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "17 سم",
+   "كود الموديل": "1059"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1259,
+  "name": "بديل خشب 16 سم كود 329 ws",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 116,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 116,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "16 سم",
+   "كود الموديل": "329"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1764,
+  "name": "بديل خشب 17 سم كود M1-018",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 116,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 116,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "17 سم",
+   "كود الموديل": "M1-018"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1388,
+  "name": "بديل خشب بومبيه WP3",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 104,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 104,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1553,
+  "name": "بديل خشب كود 1088 17 سم",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 101,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 101,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "17 سم",
+   "كود الموديل": "1088"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1622,
+  "name": "بديل خشب كود 1076 17 سم",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 101,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 101,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "17 سم",
+   "كود الموديل": "1076"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1766,
+  "name": "بديل خشب بومبيه ابيض ساده",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 100,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 100,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "ابيض"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1760,
+  "name": "بديل خشب بومبيه M2-003",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 98,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 98,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1763,
+  "name": "بديل خشب 17 سم كود M1-024",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 92,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 92,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "17 سم",
+   "كود الموديل": "M1-024"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1759,
+  "name": "بديل خشب بومبيه M2-024",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 84,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 84,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1761,
+  "name": "بديل خشب بومبيه M2-018",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 80,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 80,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1765,
+  "name": "بديل خشب بومبيه اسود ساده",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 75,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 75,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "اسود"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1762,
+  "name": "بديل خشب بومبيه M2-007",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 65,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 65,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1453,
+  "name": "بديل خشب كود 1054 20 سم",
+  "category": "بديل الخشب",
+  "spec_type": "wallpanel",
+  "stock_total": 62,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 62,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "20 سم",
+   "كود الموديل": "1054"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1782,
+  "name": "رخام استيكر 60*60",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 1499,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 1499,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "المقاس": "60 × 60"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1417,
+  "name": "لاصق بولي استر للرخام",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 108,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 108,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 954,
+  "name": "ك كوله رخام شق التعبان",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 101,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 73,
+   "asyut_new": 24,
+   "moalemin": 4,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 955,
+  "name": "كوله رخام شق التعبان 1/2 ك",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 53,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 50,
+   "asyut_new": 3,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1614,
+  "name": "لوح بديل رخام كود 079 _ 038",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 51,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 51,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "079"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1511,
+  "name": "كوله رخام بيانكو ايطالي",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 50,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 41,
+   "asyut_new": 9,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1372,
+  "name": "بديل رخام 80 d m",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 40,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 40,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1792,
+  "name": "نص ك كوله رخام 4M",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 35,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 35,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1467,
+  "name": "بديل رخام كود 49 MD",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 33,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 33,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "49"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1127,
+  "name": "صنفره رخام",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 30,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 0,
+   "asyut_new": 30,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 97,
+  "name": "بديل رخام مصري كود uvr/md92",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 28,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 28,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "uvr/md92"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1791,
+  "name": "ك كوله رخام 4M",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 27,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 27,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1613,
+  "name": "بديل رخام كود 018",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 25,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 25,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "018"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 96,
+  "name": "بديل رخام كود 90 MD",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 24,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 24,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "90"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1688,
+  "name": "لوح بديل رخام كود 035",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 24,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 24,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "035"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 83,
+  "name": "بديل رخام ارتيستيك بانل كود 4989",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 21,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 21,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "4989"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1549,
+  "name": "بديل رخام ريزن كود 5011",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 21,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 21,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "5011"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 93,
+  "name": "بديل رخام كود 64 MD",
+  "category": "بديل الرخام",
+  "spec_type": "marble",
+  "stock_total": 19,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 19,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "64"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1739,
+  "name": "اكره وش طويل سلندر حجره 2 لون",
+  "category": "بديل الحجر",
+  "spec_type": "stone",
+  "stock_total": 232,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 232,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1775,
+  "name": "بديل حجر مرن 120*60 كود 1/7",
+  "category": "بديل الحجر",
+  "spec_type": "stone",
+  "stock_total": 200,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 200,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "المقاس": "120 × 60",
+   "كود الموديل": "1/7"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1774,
+  "name": "بديل حجر مرن 120*60 كود 1/2",
+  "category": "بديل الحجر",
+  "spec_type": "stone",
+  "stock_total": 154,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 154,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "المقاس": "120 × 60",
+   "كود الموديل": "1/2"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1070,
+  "name": "بديل حجر 60*120",
+  "category": "بديل الحجر",
+  "spec_type": "stone",
+  "stock_total": 130,
+  "stock_by_warehouse": {
+   "nemis_main": 1,
+   "nemis_shop": 113,
+   "asyut_new": 0,
+   "moalemin": 16,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "المقاس": "60 × 120"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1779,
+  "name": "بديل حجر مرن 120*60 كود 2/8",
+  "category": "بديل الحجر",
+  "spec_type": "stone",
+  "stock_total": 100,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 100,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "المقاس": "120 × 60",
+   "كود الموديل": "2/8"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1780,
+  "name": "بديل حجر مرن 120*60 كود 3/2",
+  "category": "بديل الحجر",
+  "spec_type": "stone",
+  "stock_total": 100,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 100,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "المقاس": "120 × 60",
+   "كود الموديل": "3/2"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1781,
+  "name": "بديل حجر مرن 120*60 كود 3/5",
+  "category": "بديل الحجر",
+  "spec_type": "stone",
+  "stock_total": 100,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 100,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "المقاس": "120 × 60",
+   "كود الموديل": "3/5"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1776,
+  "name": "بديل حجر مرن 120*60 كود 1/5",
+  "category": "بديل الحجر",
+  "spec_type": "stone",
+  "stock_total": 99,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 99,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "المقاس": "120 × 60",
+   "كود الموديل": "1/5"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1778,
+  "name": "بديل حجر مرن 120*60 كود 2/7",
+  "category": "بديل الحجر",
+  "spec_type": "stone",
+  "stock_total": 99,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 99,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "المقاس": "120 × 60",
+   "كود الموديل": "2/7"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1777,
+  "name": "بديل حجر مرن 120*60 كود 2/5",
+  "category": "بديل الحجر",
+  "spec_type": "stone",
+  "stock_total": 91,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 91,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "المقاس": "120 × 60",
+   "كود الموديل": "2/5"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1324,
+  "name": "فوم باركيه",
+  "category": "الباركيه والأرضيات",
+  "spec_type": "floor",
+  "stock_total": 1209,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 1209,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 232,
+  "name": "زاوية SPC ربع عمود",
+  "category": "الباركيه والأرضيات",
+  "spec_type": "floor",
+  "stock_total": 28,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 28,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1578,
+  "name": "بركيه كيما ستون spc بالكرتونه كود 1-1354",
+  "category": "الباركيه والأرضيات",
+  "spec_type": "floor",
+  "stock_total": 7,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 7,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "1-1354"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1226,
+  "name": "فاصل باركيه الوان",
+  "category": "الباركيه والأرضيات",
+  "spec_type": "floor",
+  "stock_total": 3,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 3,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1315,
+  "name": "شادو جاب ارضية بكفر ليد 3 سم 3 متر",
+  "category": "الباركيه والأرضيات",
+  "spec_type": "floor",
+  "stock_total": 2,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 2,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "3 سم",
+   "الطول": "3 متر"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 152,
+  "name": "زاوية فومكس",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 2028,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 1998,
+   "asyut_new": 27,
+   "moalemin": 3,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1234,
+  "name": "لوح فوم 3 سم",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 1858,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 1715,
+   "asyut_new": 143,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "3 سم"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1166,
+  "name": "فايبر جي QMC",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 1586,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 1004,
+   "asyut_new": 508,
+   "moalemin": 74,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 866,
+  "name": "اديبوند 65 مركز 1 لتر CMB",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 1082,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 28,
+   "asyut_new": 983,
+   "moalemin": 71,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1184,
+  "name": "لوح فوم 5 سم",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 975,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 440,
+   "asyut_new": 535,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "5 سم"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 867,
+  "name": "لفه فايبر برتقالي",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 633,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 25,
+   "asyut_new": 608,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 142,
+  "name": "بانوة فومنكس 2 سم جنب",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 328,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 328,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "2 سم"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1109,
+  "name": "لوح فوم 2 سم",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 158,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 1,
+   "asyut_new": 135,
+   "moalemin": 22,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "2 سم"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1113,
+  "name": "لوح مارموكس 2 سم",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 122,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 82,
+   "asyut_new": 39,
+   "moalemin": 1,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "2 سم"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 309,
+  "name": "اسبراي فوم",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 114,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 66,
+   "asyut_new": 37,
+   "moalemin": 11,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 63,
+  "name": "بورديوم داخلي كود 57",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 94,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 94,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "57"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1466,
+  "name": "زاويه جيبسون بورد",
+  "category": "الألواح والبورد",
+  "spec_type": "board",
+  "stock_total": 50,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 0,
+   "asyut_new": 50,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 226,
+  "name": "استلس اكسسوار شيبورد حرف T",
+  "category": "الشيبورد والأخشاب",
+  "spec_type": "chipboard",
+  "stock_total": 895,
+  "stock_by_warehouse": {
+   "nemis_main": 14,
+   "nemis_shop": 634,
+   "asyut_new": 161,
+   "moalemin": 86,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 227,
+  "name": "استلس اكسسوار نهايه شيبورد",
+  "category": "الشيبورد والأخشاب",
+  "spec_type": "chipboard",
+  "stock_total": 497,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 410,
+   "asyut_new": 52,
+   "moalemin": 35,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 669,
+  "name": "مولار ملمع خشب",
+  "category": "الشيبورد والأخشاب",
+  "spec_type": "chipboard",
+  "stock_total": 181,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 142,
+   "asyut_new": 29,
+   "moalemin": 10,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1350,
+  "name": "زاوية خشب 3 سم",
+  "category": "الشيبورد والأخشاب",
+  "spec_type": "chipboard",
+  "stock_total": 109,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 109,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "3 سم"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 228,
+  "name": "استلس اكسسوار عمود شيبورد",
+  "category": "الشيبورد والأخشاب",
+  "spec_type": "chipboard",
+  "stock_total": 93,
+  "stock_by_warehouse": {
+   "nemis_main": 3,
+   "nemis_shop": 84,
+   "asyut_new": 5,
+   "moalemin": 1,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 894,
+  "name": "زاويه بلاستيك ميكس",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 4675,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 1099,
+   "asyut_new": 3519,
+   "moalemin": 57,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 230,
+  "name": "زاويه PVC ساده",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 2511,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 2362,
+   "asyut_new": 135,
+   "moalemin": 14,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 268,
+  "name": "استلس زاويه معدن فضي",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 2040,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 1903,
+   "asyut_new": 38,
+   "moalemin": 99,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "فضي"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 122,
+  "name": "زاوية بلاستيك دهبي",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 1559,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 1559,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 119,
+  "name": "استلس زاويه معدن ذهبي",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 1519,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 1392,
+   "asyut_new": 127,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "ذهبي"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 118,
+  "name": "زاوية بلاستيك فضي",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 1031,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 1031,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "فضي"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1281,
+  "name": "عود بانوه 2 سم PS",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 725,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 635,
+   "asyut_new": 0,
+   "moalemin": 90,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "2 سم"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 403,
+  "name": "زاويه كرسي 10×10",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 619,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 469,
+   "asyut_new": 150,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "المقاس": "10 × 10"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 123,
+  "name": "زاوية بلاستيك ابيض سادة",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 614,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 614,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "ابيض، سادة"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 224,
+  "name": "استلس زاويه 3D فضي",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 576,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 89,
+   "asyut_new": 487,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "فضي"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 144,
+  "name": "بانوة فيوتك 2 سم نص 2.40 متر",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 487,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 462,
+   "asyut_new": 0,
+   "moalemin": 25,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "2 سم",
+   "الطول": "2.40 متر"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1610,
+  "name": "زاويه فيوتك KB23 طول 2.44 م",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 480,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 480,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "كود الموديل": "KB23"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 117,
+  "name": "زاوية بلاستيك بيج مرخم",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 457,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 457,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "بيج، مرخم"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1681,
+  "name": "زاويه تجميع دريسنج 2 م",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 449,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 449,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 222,
+  "name": "استلس زاويه F فضي",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 446,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 418,
+   "asyut_new": 28,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "فضي"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1256,
+  "name": "وزره سيكلو بالمتر",
+  "category": "العدد والمستلزمات",
+  "spec_type": "cornice",
+  "stock_total": 2179,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 13,
+   "asyut_new": 2166,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1599,
+  "name": "كورنيشه K1 طول 2.40 م",
+  "category": "الدهانات والمعجون",
+  "spec_type": "cornice",
+  "stock_total": 349,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 349,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1600,
+  "name": "كورنيشه K3 طول 2.40 م",
+  "category": "الدهانات والمعجون",
+  "spec_type": "cornice",
+  "stock_total": 348,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 348,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 134,
+  "name": "كورنيشه 7 سم كود F508 طول 2.40 متر",
+  "category": "الدهانات والمعجون",
+  "spec_type": "cornice",
+  "stock_total": 334,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 267,
+   "asyut_new": 0,
+   "moalemin": 67,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "العرض": "7 سم",
+   "الطول": "2.40 متر",
+   "كود الموديل": "F508"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1582,
+  "name": "عود وزرة ليد Semon",
+  "category": "الإضاءة",
+  "spec_type": "cornice",
+  "stock_total": 225,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 219,
+   "asyut_new": 0,
+   "moalemin": 6,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 985,
+  "name": "جراوت رول سيلر ابيض 5 ك",
+  "category": "العزل والكيماويات",
+  "spec_type": "insulation",
+  "stock_total": 201,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 42,
+   "asyut_new": 149,
+   "moalemin": 10,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "ابيض"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 518,
+  "name": "فرشه عزل بروش",
+  "category": "العزل والكيماويات",
+  "spec_type": "insulation",
+  "stock_total": 156,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 6,
+   "asyut_new": 117,
+   "moalemin": 33,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1230,
+  "name": "سيكا وتر ستوب 32",
+  "category": "العزل والكيماويات",
+  "spec_type": "insulation",
+  "stock_total": 155,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 155,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1006,
+  "name": "مجموعه عزل مائي 1020 سافيتو",
+  "category": "العزل والكيماويات",
+  "spec_type": "insulation",
+  "stock_total": 124,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 0,
+   "asyut_new": 118,
+   "moalemin": 6,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 829,
+  "name": "ك كيما بوكس 165",
+  "category": "العزل والكيماويات",
+  "spec_type": "insulation",
+  "stock_total": 106,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 84,
+   "asyut_new": 18,
+   "moalemin": 4,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1700,
+  "name": "عود ليد بروفايل اسود",
+  "category": "الإضاءة",
+  "spec_type": "light",
+  "stock_total": 52,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 25,
+   "asyut_new": 27,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "اسود"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1726,
+  "name": "عود بروفايل ليد 1.5",
+  "category": "الإضاءة",
+  "spec_type": "light",
+  "stock_total": 19,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 10,
+   "asyut_new": 9,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 1121,
+  "name": "عود ليد اسود",
+  "category": "الإضاءة",
+  "spec_type": "light",
+  "stock_total": 16,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 16,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {
+   "اللون": "اسود"
+  },
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 223,
+  "name": "استلس زاويه 3D دهبي",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 440,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 76,
+   "asyut_new": 364,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ },
+ {
+  "edara_row_no": 402,
+  "name": "زاويه كرسي",
+  "category": "الاستانلس والفيوتك",
+  "spec_type": "steelstrip",
+  "stock_total": 426,
+  "stock_by_warehouse": {
+   "nemis_main": 0,
+   "nemis_shop": 426,
+   "asyut_new": 0,
+   "moalemin": 0,
+   "car_direct": 0
+  },
+  "facts_from_name": {},
+  "price": null,
+  "engineer_price": null,
+  "specs_status": "draft_general_by_type"
+ }
+]
